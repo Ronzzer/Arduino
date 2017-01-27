@@ -14,19 +14,19 @@
    #define D9 3     // RX0 (Serial console)
    #define D10 1    // TX0 (Serial console)
  
-void setup() {
-  // initialize digital pin 13 as an output.
-  pinMode(D7, OUTPUT);
-}
+void setup() 
+  {
+   // initialize digital pin 13 as an output.
+   pinMode(D7, OUTPUT);
+  }
 
 // the loop function runs over and over again forever
-void loop() {
-  digitalWrite(13, HIGH);   // turn the LED on (HIGH is the voltage level)
-  delay(1000);              // wait for a second
-  digitalWrite(13, LOW);    // turn the LED off by making the voltage LOW
-  delay(1000);              // wait for a second
-<<<<<<< HEAD
-}
-=======
-}
->>>>>>> 9a0059877b9a530c8be8b9b45f56a26dcbc733ab
+void loop() 
+  {
+   digitalWrite(13, HIGH);   // turn the LED on (HIGH is the voltage level)
+   delay(1000);              // wait for a second
+   digitalWrite(13, LOW);    // turn the LED off by making the voltage LOW
+   delay(1000);              // wait for a second
+  }
+
+

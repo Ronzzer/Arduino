@@ -12,13 +12,19 @@ be used with analogWrite().
 #define PULSE     INHALE*1000/BRIGHT
 #define REST      1000    //Rest Between Inhalations.
 
-//----- Setup function. ------------------------
-void setup() {                
-  pinMode(LED, OUTPUT);   // LED pin as output.    
+int x;
 
-  // initialize digital pin 13 as an output.
-  pinMode(D7, OUTPUT);
-}
+//----- Setup function. ------------------------
+void setup() 
+  {
+   Serial.begin(115200);
+   delay(10);
+
+   pinMode(LED, OUTPUT);   // LED pin as output.    
+
+   // initialize digital pin 13 as an output.
+   pinMode(D7, OUTPUT);
+  }
 
 //----- Loop routine. --------------------------
 void loop() {
@@ -46,8 +52,9 @@ void loop() {
     delay(0);                        //to prevent watchdog firing.
   }
   delay(REST);                       //take a rest...
-<<<<<<< HEAD
+
+  x++;
+  Serial.print(x);
+  Serial.print("\r\n");
 }
-=======
-}
->>>>>>> 9a0059877b9a530c8be8b9b45f56a26dcbc733ab
+
