@@ -50,10 +50,7 @@ void loop()
    Serial.print(x);
    Serial.print("\r\n");
 
-<<<<<<< HEAD
    // step forward 
-=======
->>>>>>> 9a0059877b9a530c8be8b9b45f56a26dcbc733ab
    for(i=0; i<200; i++)
      {
       myStepper.step(5);
@@ -63,11 +60,7 @@ void loop()
    delay(1000);
    digitalWrite(LED_BUILTIN, LOW);    // off
 
-<<<<<<< HEAD
    // step backward
-=======
-
->>>>>>> 9a0059877b9a530c8be8b9b45f56a26dcbc733ab
    for(i=0; i<200; i++)
      {
       myStepper.step(-5);
@@ -96,8 +89,3 @@ void loop()
   
   }
 
-<<<<<<< HEAD
-
-=======
-
->>>>>>> 9a0059877b9a530c8be8b9b45f56a26dcbc733ab
