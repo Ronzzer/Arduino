@@ -46,4 +46,8 @@ void loop() {
     delay(0);                        //to prevent watchdog firing.
   }
   delay(REST);                       //take a rest...
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 9a0059877b9a530c8be8b9b45f56a26dcbc733ab
